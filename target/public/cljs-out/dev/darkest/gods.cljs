@@ -242,7 +242,7 @@
           :mana 0
           :blood 0
           :hunger-pang 100
-          :chaos 0
+          :chaos 50
           :hunger-tick 3000}
    :medium {:blood-needed 500
             :cultists 20
@@ -250,7 +250,7 @@
             :mana 0
             :blood 0
             :hunger-pang 100
-            :chaos 125
+            :chaos 100
             :hunger-tick 2000}
    :hard {:blood-needed 1000
           :cultists 30
