@@ -25,18 +25,18 @@
             [[:p "Gain $10. Can be researched again."]]}
    :chaos+ {:name "Ritual of Chaos"
             :fn #(-> %
-                     (update :chaos inc)
+                     (update :chaos + 10)
                      (update :technologies dissoc :chaos+))
             :mana 1
             :expose
-            [[:p "Increase chaos by 1. Can be researched again."]]}
+            [[:p "Increase chaos by 10. Can be researched again."]]}
    :chaos- {:name "Ritual of Stillness"
             :fn #(-> %
-                     (update :chaos dec)
+                     (update :chaos - 10)
                      (update :technologies dissoc :chaos-))
             :mana 1
             :expose
-            [[:p "Decrease chaos by 1. Can be researched again."]]}
+            [[:p "Decrease chaos by 10. Can be researched again."]]}
    :pow {:name "Power of Death"
          :fn #(update % :mana-power inc)
          :mana 10
@@ -245,7 +245,7 @@
           :chaos 0
           :hunger-tick 3000}
    :medium {:blood-needed 500
-            :cultists 5
+            :cultists 20
             :money 80.00
             :mana 0
             :blood 0
@@ -253,7 +253,7 @@
             :chaos 125
             :hunger-tick 2000}
    :hard {:blood-needed 1000
-          :cultists 1
+          :cultists 30
           :money 40.00
           :mana 0
           :chaos 200
@@ -341,7 +341,7 @@
    (fn [state]
      (if (> (:cultists state) 0)
        (-> (update state :cultists dec)
-           (update :blood inc))
+           (update :blood + (:blood-power state)))
        (update state :events conj "Not enough cultists!")))))
 
 (defn recruit! []
@@ -365,7 +365,7 @@
        (-> (update state :blood - (:hunger-power state))
            (update :blood-needed dec)
            (update :hunger #(if (zero? %) 0 (dec %)))
-           (update :mana inc)
+           (update :mana + (:mana-power state))
            (win-condition))
        (update state :events conj "Not enough blood!")))))
 
