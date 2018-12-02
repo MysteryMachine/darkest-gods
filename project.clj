@@ -7,4 +7,5 @@
   :resource-paths ["target" "resources"]
   ;; set up an alias to invoke your figwheel build
   :aliases {"fig" ["trampoline" "run" "-m" "figwheel.main"]
-            "build-dev" ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]})
+            "build-dev" ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]
+            "build-prod" ["trampoline" "run" "-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]})

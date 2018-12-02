@@ -59,12 +59,12 @@ if(typeof dashed === 'string'){
 return dashed;
 } else {
 var name_str = cljs.core.name.call(null,dashed);
-var vec__18281 = clojure.string.split.call(null,name_str,/-/);
-var seq__18282 = cljs.core.seq.call(null,vec__18281);
-var first__18283 = cljs.core.first.call(null,seq__18282);
-var seq__18282__$1 = cljs.core.next.call(null,seq__18282);
-var start = first__18283;
-var parts = seq__18282__$1;
+var vec__8283 = clojure.string.split.call(null,name_str,/-/);
+var seq__8284 = cljs.core.seq.call(null,vec__8283);
+var first__8285 = cljs.core.first.call(null,seq__8284);
+var seq__8284__$1 = cljs.core.next.call(null,seq__8284);
+var start = first__8285;
+var parts = seq__8284__$1;
 if(cljs.core.truth_(reagent.impl.util.dont_camel_case.call(null,start))){
 return name_str;
 } else {
@@ -127,218 +127,218 @@ this.cljs$lang$protocol_mask$partition1$ = 0;
 reagent.impl.util.PartialFn.prototype.cljs$core$Fn$ = cljs.core.PROTOCOL_SENTINEL;
 
 reagent.impl.util.PartialFn.prototype.call = (function() {
-var G__18289 = null;
-var G__18289__1 = (function (self__){
+var G__8291 = null;
+var G__8291__1 = (function (self__){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null);
 });
-var G__18289__2 = (function (self__,a){
+var G__8291__2 = (function (self__,a){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a);
 });
-var G__18289__3 = (function (self__,a,b){
+var G__8291__3 = (function (self__,a,b){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b);
 });
-var G__18289__4 = (function (self__,a,b,c){
+var G__8291__4 = (function (self__,a,b,c){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c);
 });
-var G__18289__5 = (function (self__,a,b,c,d){
+var G__8291__5 = (function (self__,a,b,c,d){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d);
 });
-var G__18289__6 = (function (self__,a,b,c,d,e){
+var G__8291__6 = (function (self__,a,b,c,d,e){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e);
 });
-var G__18289__7 = (function (self__,a,b,c,d,e,f__$1){
+var G__8291__7 = (function (self__,a,b,c,d,e,f__$1){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1);
 });
-var G__18289__8 = (function (self__,a,b,c,d,e,f__$1,g){
+var G__8291__8 = (function (self__,a,b,c,d,e,f__$1,g){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g);
 });
-var G__18289__9 = (function (self__,a,b,c,d,e,f__$1,g,h){
+var G__8291__9 = (function (self__,a,b,c,d,e,f__$1,g,h){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h);
 });
-var G__18289__10 = (function (self__,a,b,c,d,e,f__$1,g,h,i){
+var G__8291__10 = (function (self__,a,b,c,d,e,f__$1,g,h,i){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i);
 });
-var G__18289__11 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j){
+var G__8291__11 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j);
 });
-var G__18289__12 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k){
+var G__8291__12 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k);
 });
-var G__18289__13 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l){
+var G__8291__13 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l);
 });
-var G__18289__14 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m){
+var G__8291__14 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m);
 });
-var G__18289__15 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n){
+var G__8291__15 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n);
 });
-var G__18289__16 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o){
+var G__8291__16 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o);
 });
-var G__18289__17 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p){
+var G__8291__17 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p);
 });
-var G__18289__18 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q){
+var G__8291__18 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q);
 });
-var G__18289__19 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r){
+var G__8291__19 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r);
 });
-var G__18289__20 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s){
+var G__8291__20 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s);
 });
-var G__18289__21 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t){
+var G__8291__21 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return self__.pfn.call(null,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t);
 });
-var G__18289__22 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t,rest){
+var G__8291__22 = (function (self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t,rest){
 var self__ = this;
 var self____$1 = this;
 var _ = self____$1;
 return cljs.core.apply.call(null,self__.pfn,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t,rest);
 });
-G__18289 = function(self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t,rest){
+G__8291 = function(self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t,rest){
 switch(arguments.length){
 case 1:
-return G__18289__1.call(this,self__);
+return G__8291__1.call(this,self__);
 case 2:
-return G__18289__2.call(this,self__,a);
+return G__8291__2.call(this,self__,a);
 case 3:
-return G__18289__3.call(this,self__,a,b);
+return G__8291__3.call(this,self__,a,b);
 case 4:
-return G__18289__4.call(this,self__,a,b,c);
+return G__8291__4.call(this,self__,a,b,c);
 case 5:
-return G__18289__5.call(this,self__,a,b,c,d);
+return G__8291__5.call(this,self__,a,b,c,d);
 case 6:
-return G__18289__6.call(this,self__,a,b,c,d,e);
+return G__8291__6.call(this,self__,a,b,c,d,e);
 case 7:
-return G__18289__7.call(this,self__,a,b,c,d,e,f__$1);
+return G__8291__7.call(this,self__,a,b,c,d,e,f__$1);
 case 8:
-return G__18289__8.call(this,self__,a,b,c,d,e,f__$1,g);
+return G__8291__8.call(this,self__,a,b,c,d,e,f__$1,g);
 case 9:
-return G__18289__9.call(this,self__,a,b,c,d,e,f__$1,g,h);
+return G__8291__9.call(this,self__,a,b,c,d,e,f__$1,g,h);
 case 10:
-return G__18289__10.call(this,self__,a,b,c,d,e,f__$1,g,h,i);
+return G__8291__10.call(this,self__,a,b,c,d,e,f__$1,g,h,i);
 case 11:
-return G__18289__11.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j);
+return G__8291__11.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j);
 case 12:
-return G__18289__12.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k);
+return G__8291__12.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k);
 case 13:
-return G__18289__13.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l);
+return G__8291__13.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l);
 case 14:
-return G__18289__14.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m);
+return G__8291__14.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m);
 case 15:
-return G__18289__15.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n);
+return G__8291__15.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n);
 case 16:
-return G__18289__16.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o);
+return G__8291__16.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o);
 case 17:
-return G__18289__17.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p);
+return G__8291__17.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p);
 case 18:
-return G__18289__18.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q);
+return G__8291__18.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q);
 case 19:
-return G__18289__19.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r);
+return G__8291__19.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r);
 case 20:
-return G__18289__20.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s);
+return G__8291__20.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s);
 case 21:
-return G__18289__21.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t);
+return G__8291__21.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t);
 case 22:
-return G__18289__22.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t,rest);
+return G__8291__22.call(this,self__,a,b,c,d,e,f__$1,g,h,i,j,k,l,m,n,o,p,q,r,s,t,rest);
 }
 throw(new Error('Invalid arity: ' + (arguments.length - 1)));
 };
-G__18289.cljs$core$IFn$_invoke$arity$1 = G__18289__1;
-G__18289.cljs$core$IFn$_invoke$arity$2 = G__18289__2;
-G__18289.cljs$core$IFn$_invoke$arity$3 = G__18289__3;
-G__18289.cljs$core$IFn$_invoke$arity$4 = G__18289__4;
-G__18289.cljs$core$IFn$_invoke$arity$5 = G__18289__5;
-G__18289.cljs$core$IFn$_invoke$arity$6 = G__18289__6;
-G__18289.cljs$core$IFn$_invoke$arity$7 = G__18289__7;
-G__18289.cljs$core$IFn$_invoke$arity$8 = G__18289__8;
-G__18289.cljs$core$IFn$_invoke$arity$9 = G__18289__9;
-G__18289.cljs$core$IFn$_invoke$arity$10 = G__18289__10;
-G__18289.cljs$core$IFn$_invoke$arity$11 = G__18289__11;
-G__18289.cljs$core$IFn$_invoke$arity$12 = G__18289__12;
-G__18289.cljs$core$IFn$_invoke$arity$13 = G__18289__13;
-G__18289.cljs$core$IFn$_invoke$arity$14 = G__18289__14;
-G__18289.cljs$core$IFn$_invoke$arity$15 = G__18289__15;
-G__18289.cljs$core$IFn$_invoke$arity$16 = G__18289__16;
-G__18289.cljs$core$IFn$_invoke$arity$17 = G__18289__17;
-G__18289.cljs$core$IFn$_invoke$arity$18 = G__18289__18;
-G__18289.cljs$core$IFn$_invoke$arity$19 = G__18289__19;
-G__18289.cljs$core$IFn$_invoke$arity$20 = G__18289__20;
-G__18289.cljs$core$IFn$_invoke$arity$21 = G__18289__21;
-G__18289.cljs$core$IFn$_invoke$arity$22 = G__18289__22;
-return G__18289;
+G__8291.cljs$core$IFn$_invoke$arity$1 = G__8291__1;
+G__8291.cljs$core$IFn$_invoke$arity$2 = G__8291__2;
+G__8291.cljs$core$IFn$_invoke$arity$3 = G__8291__3;
+G__8291.cljs$core$IFn$_invoke$arity$4 = G__8291__4;
+G__8291.cljs$core$IFn$_invoke$arity$5 = G__8291__5;
+G__8291.cljs$core$IFn$_invoke$arity$6 = G__8291__6;
+G__8291.cljs$core$IFn$_invoke$arity$7 = G__8291__7;
+G__8291.cljs$core$IFn$_invoke$arity$8 = G__8291__8;
+G__8291.cljs$core$IFn$_invoke$arity$9 = G__8291__9;
+G__8291.cljs$core$IFn$_invoke$arity$10 = G__8291__10;
+G__8291.cljs$core$IFn$_invoke$arity$11 = G__8291__11;
+G__8291.cljs$core$IFn$_invoke$arity$12 = G__8291__12;
+G__8291.cljs$core$IFn$_invoke$arity$13 = G__8291__13;
+G__8291.cljs$core$IFn$_invoke$arity$14 = G__8291__14;
+G__8291.cljs$core$IFn$_invoke$arity$15 = G__8291__15;
+G__8291.cljs$core$IFn$_invoke$arity$16 = G__8291__16;
+G__8291.cljs$core$IFn$_invoke$arity$17 = G__8291__17;
+G__8291.cljs$core$IFn$_invoke$arity$18 = G__8291__18;
+G__8291.cljs$core$IFn$_invoke$arity$19 = G__8291__19;
+G__8291.cljs$core$IFn$_invoke$arity$20 = G__8291__20;
+G__8291.cljs$core$IFn$_invoke$arity$21 = G__8291__21;
+G__8291.cljs$core$IFn$_invoke$arity$22 = G__8291__22;
+return G__8291;
 })()
 ;
 
-reagent.impl.util.PartialFn.prototype.apply = (function (self__,args18288){
+reagent.impl.util.PartialFn.prototype.apply = (function (self__,args8290){
 var self__ = this;
 var self____$1 = this;
-return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args18288)));
+return self____$1.call.apply(self____$1,[self____$1].concat(cljs.core.aclone.call(null,args8290)));
 });
 
 reagent.impl.util.PartialFn.prototype.cljs$core$IFn$_invoke$arity$0 = (function (){
@@ -564,11 +564,11 @@ return reagent.impl.util.merge_style.call(null,p1,reagent.impl.util.merge_class.
 reagent.impl.util._STAR_always_update_STAR_ = false;
 reagent.impl.util.force_update = (function reagent$impl$util$force_update(comp,deep){
 if(cljs.core.truth_(deep)){
-var _STAR_always_update_STAR_18290 = reagent.impl.util._STAR_always_update_STAR_;
+var _STAR_always_update_STAR_8292 = reagent.impl.util._STAR_always_update_STAR_;
 reagent.impl.util._STAR_always_update_STAR_ = true;
 
 try{return (comp["forceUpdate"])();
-}finally {reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR_18290;
+}finally {reagent.impl.util._STAR_always_update_STAR_ = _STAR_always_update_STAR_8292;
 }} else {
 return (comp["forceUpdate"])();
 }

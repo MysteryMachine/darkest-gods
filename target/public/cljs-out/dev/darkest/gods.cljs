@@ -590,7 +590,11 @@
     [menu "New Game" {:class "small"}
      [reveal-button easy-f "Encroaching Apocalypse" "Easy"]
      [reveal-button med-f "World on the Precipice" "Medium"]
-     [reveal-button hard-f "A Hopeful Existance" "Hard"]]]))
+     [reveal-button hard-f "A Hopeful Existance" "Hard"]]
+    [:div.credits
+     "December 2018 Ludum Dare. "
+     [:a {:href "https://github.com/MysteryMachine/darkest-gods" :target "_none"}
+      "Source Code."]]]))
 
 (defmethod render-route :intro [state]
   (let [god (god-text state)]

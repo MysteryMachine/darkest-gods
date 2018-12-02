@@ -216,3 +216,14 @@ p {
 .researched-text {
   color: #8F4343;
 }
+
+.credits {
+  text-align: center;
+  position: fixed;
+  bottom: 3em;
+  width: 100%;
+}
+
+.credits a {
+  color: #8F4343;
+}
