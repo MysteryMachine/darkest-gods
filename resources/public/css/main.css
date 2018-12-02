@@ -1,0 +1,218 @@
+/* Colors
+ white: #DEDED1
+ black: #260F23
+ blood: #8F4343
+*/
+
+@font-face {
+  font-family: body-font;
+  src: url(fonts/jackinput.TTF);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(fonts/ScareArms.otf);
+}
+
+body {
+  background-color: #260F23;
+  color: #DEDED1;
+  font-family: body-font;
+  font-size: 1.25em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+h1 {
+  color: #8F4343;
+  font-family: title-font;
+  font-size: 5em;
+  text-align: center;
+  padding: 0;
+  margin: 0.25em 0 0.5em;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  text-align: center;
+  border: solid;
+  border-color: #DEDED1;
+  border-radius: 0.25em;
+  padding: 0;
+  margin: 0 auto 0 auto;
+}
+
+.menu.small {
+  width: 25%;
+  min-width: 300px;
+}
+
+.menu.full {
+  width: 80%;
+  min-width: 400px;
+}
+
+.menu .prompt {
+  padding: 0.5em 0;
+  background-color: #DEDED1;
+  color: #260F23;
+}
+
+.menu .button {
+  border: solid;
+  border-width: 0 0 2px 0;
+  padding: 0.25em 0.25em;
+}
+
+.menu .button:last-child {
+  border: none;
+}
+
+.menu .button:hover {
+  background-color: #8F4343;
+  cursor: pointer;
+}
+
+.menu .button:active {
+  background-color: #260F23;
+  cursor: pointer;
+}
+
+.menu .researched.button:hover,
+.menu .researched.button:active,
+.menu .cantafford.button:active,
+.menu .cantafford.button:hover{
+  background-color: #260F23;
+  cursor: default;
+}
+
+.menu .cantafford.button,
+.menu .cantafford.button:active,
+.menu .cantafford.button:hover{
+  color: #6E6E61;
+  border-color: #DEDED1;
+}
+
+
+.menu .button .reveal {
+  display: none;
+}
+
+.menu .button:hover .reveal {
+  display: block;
+}
+
+.menu .button:hover .visible {
+  display: none;
+}
+
+.menu .exposition {
+  padding: 0.25em 0.5em;
+  border: solid;
+  border-width: 0 0 2px 0;
+}
+
+.menu .exposition:last-child {
+  border-width: 0;
+}
+
+.menu .exposition p {
+  padding-bottom: 1em;
+}
+
+.menu .exposition p:last-child {
+  padding-bottom: 0em;
+}
+
+.god-name {
+  color: #8F4343;
+  font-family: title-font;
+  font-size: 0.85em;
+}
+
+.main {
+  display: flex;
+}
+
+.menu table.simple {
+  width: 100%;
+  border-collapse:collapse 
+}
+
+.menu tr:first-child td {
+  padding: 0.5em 0.5em 0.25em 0.5em;
+}
+
+.menu tr:last-child td {
+  padding: 0.25em 0.5em 0.5em 0.5em;
+}
+
+.menu td {
+  padding: 0.25em 0.5em;
+}
+
+.menu tr:hover {
+  background-color: #8F4343;
+}
+
+.main .main-column {
+  width: 49%;
+}
+
+.main .main-column:first-child {
+  margin-right: 2%;
+}
+
+.main .menu {
+  margin-bottom: 1em;
+}
+
+.main .menu table td:first-child {
+  text-align: left;
+}
+
+.main .menu table td {
+  width: 50%;
+}
+
+
+.main .menu .exposition {
+  text-align: left;
+}
+
+.menu.events .exposition {
+  padding: 0;
+  height: 400px;
+  overflow: hidden;
+}
+
+.scroll {
+  overflow-y: scroll;
+  padding-right: 17px;
+  width: 100%;
+  height: 100%;
+  box-sizing: content-box;
+}
+
+.menu.events .exposition p {
+  border: solid;
+  border-width: 0 0 2px 0;
+  padding: 0.25em 0.5em;
+}
+
+.menu.events .exposition p:last-child {
+  border: none;
+}
+
+.researched-text {
+  color: #8F4343;
+}
