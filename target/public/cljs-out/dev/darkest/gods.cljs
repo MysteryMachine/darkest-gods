@@ -236,7 +236,7 @@
    :tick-effects []})
 
 (def difficulties
-  {:easy {:blood-needed 1;00
+  {:easy {:blood-needed 100
           :cultists 10
           :money 100
           :mana 0
