@@ -323,7 +323,7 @@
   (/ (money-for-work state) (:overtime-power state)))
 
 (defn capitalism-sux [state]
-  (if (> (+ (rand-int 10000) (* (:chaos state) (rand))) 10000)
+  (if (> (+ (rand-int 100000) (* (:chaos state) (rand))) 100000)
     (-> state
         (update :cultists dec)
         (update :events conj "One of your cultists worked themselves to death."))
